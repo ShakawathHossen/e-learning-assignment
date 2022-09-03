@@ -5,6 +5,7 @@ h1{
 }
 p{
     font-family: 'Rajdhani', sans-serif;
+    font-size: 24px;
 }
 .carousel-inner{
     height: 100vh !important;
@@ -29,6 +30,28 @@ p{
   z-index: 2;
 }
 /* media quary  */
+@media only screen and (max-width: 479px){
+    .carousel {
+        padding-top: 50px;
+    }
+    .carousel-caption h1{
+        font-size: 20px !important;
+    }
+    .carousel-caption p{
+        font-size: 12px !important;
+    }
+    .carousel-caption .btn{
+        font-size: 12px;
+    }
+} 
+@media only screen and (max-width: 767px) {
+    h1{
+      font-size: 32px !important;  
+    }
+    p{
+        font-size: 16px !important;
+    }
+}
 @media only screen and (min-width: 992px) {
     .carousel-caption {
         bottom: 15rem !important;
