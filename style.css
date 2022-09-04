@@ -1,59 +1,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600;700&display=swap');
-h1{
-    font-family: 'Staatliches', cursive;
+body{
+    font-family: 'Rajdhani', sans-serif !important;
 }
-p{
-    font-family: 'Rajdhani', sans-serif;
-    font-size: 24px;
-}
-.carousel-inner{
-    height: 100vh !important;
-}
-.nav-item a:hover{
-    color: green;
-}
-.drk:after {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: rgb(0, 0, 0);
-  opacity: 0.6;
-  z-index: 1;
+h1 {
+    font-family: 'Staatliches', cursive ;
 }
 
-.carousel-caption {
-  z-index: 2;
+.nav-item a:hover {
+    color: green;
 }
+
 /* media quary  */
-@media only screen and (max-width: 479px){
+@media only screen and (max-width:576px) {
     .carousel {
-        padding-top: 50px;
+        margin-top: 20px;
     }
-    .carousel-caption h1{
-        font-size: 20px !important;
+    .slider-heading {
+        font-size: 24px !important;
     }
-    .carousel-caption p{
-        font-size: 12px !important;
-    }
-    .carousel-caption .btn{
+
+    .slider-detail {
         font-size: 12px;
     }
-} 
-@media only screen and (max-width: 767px) {
-    h1{
-      font-size: 32px !important;  
+    .carousel-caption .small-btn{
+        padding: 8px 10px !important;
+        font-size: 12px;
     }
-    p{
-        font-size: 16px !important;
-    }
+
 }
-@media only screen and (min-width: 992px) {
-    .carousel-caption {
-        bottom: 15rem !important;
+
+@media screen and (min-width:577px) and (max-width:991px)  {
+    .slider-heading {
+        font-size: 32px !important;
     }
+
 }
