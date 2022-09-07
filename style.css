@@ -5,6 +5,10 @@ body{
 }
 h1 {
     font-family: 'Staatliches', cursive ;
+ 
+}
+.special-decoration{
+    text-decoration: underline wavy 5px white;
 }
 
 .nav-item a:hover {
@@ -29,12 +33,21 @@ h1 {
         padding: 8px 10px !important;
         font-size: 12px;
     }
+    .companies{
+        width: 150px !important;
+    }
+    .company{
+        display: none;
+    }
 
 }
 
 @media screen and (min-width:577px) and (max-width:991px)  {
     .slider-heading {
         font-size: 32px !important;
+        
     }
-
+    .company{
+        display: none;
+    }
 }
